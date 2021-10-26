@@ -1,0 +1,43 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@instinct-web/admin": ["packages/frontend/lib/admin/src"],
+      "@instinct-prj/interface": ["packages/interfaces/src"],
+      "@instinct-web/core": ["packages/frontend/lib/core/src"],
+      "@instinct-web/nitro-client": ["packages/frontend/lib/nitro-client/src"],
+      "@instinct-web/flash-client": ["packages/frontend/lib/flash-client/src"],
+      "@instinct-theme/ares": ["packages/frontend/theme/ares/src"],
+      "@instinct-theme/flat": ["packages/frontend/theme/flat/src"],
+      "@instinct-theme/bobba": ["packages/frontend/theme/bobba/src"],
+      "@instinct-theme/classic": ["packages/frontend/theme/classic/src"],
+      "@instinct-api/users":  ["packages/backend/core/user/src"],
+      "@instinct-api/emails":  ["packages/backend/core/email/src"],
+      "@instinct-api/health":  ["packages/backend/core/health/src"],
+      "@instinct-api/ranks":  ["packages/backend/core/rank/src"],
+      "@instinct-api/rooms":  ["packages/backend/core/room/src"],
+      "@instinct-api/photos":  ["packages/backend/core/photo/src"],
+      "@instinct-api/groups":  ["packages/backend/core/group/src"],
+      "@instinct-api/config":  ["packages/backend/core/config/src"],
+      "@instinct-api/common":  ["packages/backend/core/common/src"],
+      "@instinct-api/google":  ["packages/backend/core/google/src"],
+      "@instinct-api/forum":  ["packages/backend/core/forum/src"],
+      "@instinct-api/articles":  ["packages/backend/core/article/src"],
+      "@instinct-api/validator":  ["packages/backend/core/validator/src"],
+      "@instinct-api/session":  ["packages/backend/core/session/src"],
+      "@instinct-api/emulator":  ["packages/backend/core/emulator/src"],
+      "@instinct-api/database":  ["packages/backend/core/database/src"],
+      "@instinct-api/beta-codes":  ["packages/backend/core/beta-code/src"],
+      "@instinct-plugin/web-store-api":  ["packages/backend/plugin/web-store/src"],
+      "@instinct-plugin/findretros-api":  ["packages/backend/plugin/findretros/src"],
+      "@instinct-plugin/manage-users-api":  ["packages/backend/plugin/manage-users/src"],
+      "@instinct-plugin/user-guestbook-api":  ["packages/backend/plugin/user-guestbook/src"],
+      "@instinct-plugin/forgot-password-api":  ["packages/backend/plugin/forgot-password/src"]
+    },
+    "noEmit": true
+  },
+  "include": [
+    "packages"
+  ]
+}
